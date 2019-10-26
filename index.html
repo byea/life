@@ -7,7 +7,10 @@
 	<meta name="application-name" content="新浪首页">
 	<style>
 		html,body,ul,ol,li{
-			margin:0;padiving:0;
+			margin:0;padding:0;
+		}
+		*{
+			 -webkit-tap-highlight-color:transparent;   //去掉移动端点击元素闪烁
 		}
 		body{
 			background-color:#9900cc;
@@ -23,63 +26,57 @@
 		ul,ol{
 			display:none;
 		}
-		header{
-			margin:60px 0;
-			position:relative;
+		header{	
 			background-color:#cc00ff;
 			}
-		header>h3{
-			text-align:center;
-			padiving:10px 0;
-			letter-spacing:8px;
-			font-size:68px;
-			color:#ff6600;
-			text-shadow:5px 2px 6px #333333;
-			
-			
+		header>div{
+			position:relative;
 		}
-		header>span{
+		header h3{	
+			width:100%;			
+			text-align:center;
+			letter-spacing:8px;
+			/*font-size:68px;      改成自适应 */
+			color:#ff6600;
+			text-shadow:3px 2px 4px #333333;			
+		}
+		header span{
 			position:absolute;
-			font-size:24px;
+			padding:0 auto;
+			display:block;
+			/* font-size:24px;     改成自适应 */
 			color:#fff;
 			letter-spacing:3px;
-			top:108px;
-			left:40%;
-			
+			top:2.3em;
+			padding-left:26%;
 		}
 		.container{
-			margin:0 auto;
 			background-color:#660033;
-			font-family:KaiTi;
-			
+			font-family:KaiTi;			
 		}
 		#vue-app{
-			position:relative;
-			text-indent:2em;
 			display:block;
+			width:100%;
 		}
-		#vue-app a{
-			
-			
-			
+		#vue-app>li{
+			display:block;			
 		}
 		#vue-app>li>div:first-child{
 			color:#006633;
 			padding:6px;
 			font-weight:bold;
-			font-size:68px;
 			cursor:pointer;
-			text-shadow:3px 2px 2px #ccc;
-			text-align:center;
+			text-shadow:1px 1px 1px #ccc;
+			padding-left:38%;
 		}
 		#vue-app>li>div:not(:first-child),
 		#vue-app>li>div>div:not(.chapter){
-			display:none;		
+			display:none;
+			padding:0 6%;
 		}
 		.container div>div:not(.chapter){
 			color:#339900;
-			text-indent:4em;
-			font-size:28px;
+			/*font-size:28px;              改成自适应 */
 			text-shadow:1px 1px 1px #333333;
 			cursor:pointer;
 		}
@@ -91,8 +88,7 @@
 		}
 		#vue-app>li>div>div:not(.chapter)>div{padding:8px;}
 		#vue-app .chapter{
-			font-size:40px;
-			margin:20px;
+			width:100%;
 			cursor:pointer;
 			color:#33CCCC;
 			text-shadow:2px 2px 2px #555555;
@@ -110,15 +106,17 @@
 		footer>a{
 			text-decoration:none;
 			color:#fff;
-			font-size:24px;
+			font-size:24px;  
 			padding:10px 40px 20px;
 		}
 	</style>
 </head>
 <body>
 	<header>
+		<div>
 		<h3>心理学与人生哲学</h3>
 		<span class="title">[西方世界伟大的励志圣经]</span>
+		</div>
 	</header>
 	<section>
 		<div class="container">
@@ -424,6 +422,26 @@
 		<a href="index.html" >首页</a>
 	</footer>
   <script>
+  	!(function(doc,win){      //获取网页宽度，并根据宽度设置字体大小
+		var docEle=doc.documentElement;
+		var fn=function(){
+		var width=docEle.clientWidth;      //获取宽度
+		var h3=doc.querySelector("header h3");
+		var span=doc.querySelector("header h3");
+		var header=doc.querySelector("header");
+		
+		width&&(docEle.style.fontSize=10*(width/320)+"px");
+		h3.style.fontSize=20*(width/320)+"px";
+		header.style.marginTop=header.style.marginBottom=20*(width/320)+"px";
+		span.style.fontSize=16*(width/320)+"px";
+		}
+		fn();
+		evt="resize";
+		win.addEventListener(evt,fn,false);
+		doc.addEventListener("DOMContLoaded",fn,false);
+	})(document,window)
+		
+		
 	function show(){
 		var srcEle=event.target || event.srcElement;
 		var ele=srcEle.nextElementSibling;
