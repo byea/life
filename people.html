@@ -1,0 +1,324 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人性的弱点</title>
+	<meta name="keywords" content"新浪,新浪网,新浪首页,门户,资讯">
+	<meta name="description" content="新浪网为全球用户24小时提供全面及时的中文资讯">
+	<meta name="application-name" content="新浪首页">
+	<style>
+		html,body,ul,ol,li{
+			margin:0;padding:0;
+		}
+		*{
+			 -webkit-tap-highlight-color:transparent;   //去掉移动端点击元素闪烁
+		}
+		body{
+			background-color:#9900cc;
+			user-select:none;
+		}
+		ul,ol{
+			list-style-type:none;
+			display:none;
+		}
+		.hidden{
+			display:none;
+		}
+		header{	
+			background-color:#cc00ff;
+			}
+		header>div{
+			position:relative;
+		}
+		header h3{	
+			width:100%;			
+			text-align:center;
+			letter-spacing:8px;
+			/*font-size:68px;      改成自适应 */
+			color:#ff6600;
+			text-shadow:3px 2px 4px #333333;			
+		}
+		header span{
+			position:absolute;
+			padding:0 auto;
+			display:block;
+			color:#fff;
+			letter-spacing:3px;
+			top:2.3em;
+			padding-left:26%;
+		}
+		.container{
+			background-color:#660033;
+			font-family:KaiTi;			
+		}
+		#vue-app{
+			display:block;
+			width:100%;
+		}
+		#vue-app>li{
+			display:block;			
+		}
+		#vue-app>li>div:first-child{
+			color:#006633;
+			padding:6px;
+			font-weight:bold;
+			cursor:pointer;
+			text-shadow:1px 1px 1px #ccc;
+			padding-left:44%;
+		}
+		#vue-app>li>div:not(:first-child),
+		#vue-app>li>div>div:not(.chapter){
+			display:none;
+			padding:0 6%;
+		}
+		.container div>div:not(.chapter){
+			color:#339900;
+			/*font-size:28px;              改成自适应 */
+			text-shadow:1px 1px 1px #333333;
+			cursor:pointer;
+		}
+		.container div>div:not(.chapter) li{
+			cursor:default;
+		}
+		.container div>div:not(.chapter) .po{
+			cursor:pointer;
+		}
+		#vue-app>li>div>div:not(.chapter)>div{padding:8px;}
+		#vue-app .chapter{
+			width:100%;
+			cursor:pointer;
+			color:#33CCCC;
+			text-shadow:2px 2px 2px #555555;
+		}
+		#vue-app>li>.content>div>ul>li{
+			color:#fff;
+			text-shadow:none;
+		}
+		.chapter+div>ul{
+			display:none;
+		}
+		.chapter+div>ul ol{
+			display:none;
+		}
+		footer>a{
+			text-decoration:none;
+			color:#fff;
+			font-size:24px;  
+			padding:10px 40px 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+		<h3>心理学与人生哲学</h3>
+		<span class="title">[西方世界伟大的励志圣经]</span>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<ul id="vue-app">
+				<li>
+					<div class="book" onclick="show()" >人性的弱点</div>
+					<div class="content">
+						<div class="chapter" onclick="show()">第一章 人际关系处理的基本原则和技巧</div>
+						<div>
+							<div onclick="show()" >一、“想要采蜜，就不要踢翻蜂巢”</div>
+							<ul>
+								<li>不要批评、责备和抱怨。</li>
+							</ul>
+							<div onclick="show()">二、处理人际关系的一大秘决</div>
+							<ul>
+								<li>诚实并真诚地欣赏他人。</li>
+							</ul>
+							<div onclick="show()">三、懂得这点才能拥有世界，否则，注定独行</div>
+							<ul>
+								<li>从对方角度看事情，唤起对方的热切需要。</li>
+							</ul>
+							
+						</div>	
+						
+						<div class="chapter" onclick="show()">第二章 让人们喜欢你的方法</div>
+						<div>
+							<div onclick="show()">一、赢得人们喜爱的秘决</div>
+							<ul>
+								<li>真城地对他人感兴趣。</li>
+							</ul>
+							<div onclick="show()">二、给他人留下好的第一印象的最简单方法</div>
+							<ul>
+								<li>微笑。</li>
+							</ul>							
+							<div onclick="show()">三、如果不这样做，你是在给自己找麻烦</div>
+							<ul>
+								<li>要记住任何语言都一样，一个人的名字对这个人来说，都是最甜蜜与关键的词语。</li>	
+								
+							</ul>
+							<div onclick="show()">四、成为一位好的交谈者的最简单方法</div>
+							<ul>
+								<li>做一个好的倾听者，鼓励他人谈论他们自己。</li>						
+							</ul>
+							<div onclick="show()">五、怎样引起他人的兴趣</div>
+							<ul>
+								<li>讨论对方的兴趣和利益。</li>								
+							</ul>
+							<div onclick="show()">六、怎样让人们很快就喜欢上你</div>
+							<ul>
+								<li>真诚地让对方感觉到他自己的重要性。</li>								
+							</ul>
+						</div>
+						
+						<div class="chapter" onclick="show()">第三章 怎样让别人接受你的思维方式</div>
+						<div>
+							<div onclick="show()">一、这样做，你才会受欢迎</div>
+							<ul>
+								<li>赢得争论的最好办法就是避免它。</li>								
+							</ul>
+							<div onclick="show()">二、一种会为你制造敌人的行人——如何避免</div>
+							<ul>
+								<li>尊重他人的意见，永远不要说“你错了”。</li>								
+							</ul>
+							<div onclick="show()">三、错了，你就承认</div>
+							<ul>
+								<li>如果你错了，就迅速并果断地承认。</li>								
+							</ul>
+							<div onclick="show()">四、一滴蜂蜜</div>
+							<ul>
+								<li>以友好的方式开始。</li>								
+							</ul>
+							<div onclick="show()">五、苏格拉底的秘密</div>
+							<ul>
+								<li>让对方回答“是的”。</li>								
+							</ul>
+							<div onclick="show()">六、为抱怨设置安全阀</div>
+							<ul>
+								<li>尽可能让他人说话。</li>								
+							</ul>
+							<div onclick="show()">七、怎样合作</div>
+							<ul>
+								<li>潜移默化，让他觉得那个想法是他自己的。</li>								
+							</ul>
+							<div onclick="show()">八、一个能为你创造奇迹的方法</div>
+							<ul>
+								<li>真诚地尝试从对方的角度看问题。</li>								
+							</ul>
+							<div onclick="show()">九、人人都想要的东西</div>
+							<ul>
+								<li>理解并同意他人的愿望和想法。</li>								
+							</ul>							
+						</div>		
+						
+						<div class="chapter" onclick="show()">第四章 真正的领导者：认人心悦诚服</div>
+						<div>
+							<div onclick="show()">一、如果必须指出错误，请用这种方法</div>
+							<ul>
+								<li>从赞美和真城的欣赏开始。</li>								
+							</ul>
+							<div onclick="show()">二、如何批评面不遭到憎恶</div>
+							<ul>
+								<li>间接让对方注意到自己的错误。</li>								
+							</ul>
+							<div onclick="show()">三、先谈自己的错误</div>
+							<ul>
+								<li>在开始批评他人前，先做自我反省。</li>								
+							</ul>
+							<div onclick="show()">四、没人喜欢被命令</div>
+							<ul>
+								<li>询问而不是下命令。</li>								
+							</ul>
+							<div onclick="show()">五、给他人挽回面子的机会</div>
+							<ul>
+								<li>给他人挽回了面子的机会。</li>								
+							</ul>
+							<div onclick="show()">六、如何激励他人走向成功</div>
+							<ul>
+								<li>赞美任何一种最细微的进步，“真诚地给予赞美，不吝赞美”。</li>								
+							</ul>
+							<div onclick="show()">七、给狗取一个好名字</div>
+							<ul>
+								<li>用好名字去激励他人。</li>								
+							</ul>
+							<div onclick="show()">八、让错误看起来更容易被纠正</div>
+							<ul>
+								<li>去鼓励，让困难显得更容易被克服。</li>								
+							</ul>
+							<div onclick="show()">九、让人们乐意为你做事</div>
+							<ul>
+								<li>让人们乐意接受你的建议。</li>								
+							</ul>							
+						</div>	
+						
+						<!--<div class="chapter" onclick="show()">第五章 一封产生奇迹的信</div>-->
+						<div class="chapter" onclick="show()">第五章 让你的家庭更幸福的七条原则</div>
+						<div>
+							<div onclick="show()">一、最迅捷为自己婚姻挖掘坟墓的方式</div>
+							<ul>
+								<li>不要唠叨。</li>								
+							</ul>
+							<div onclick="show()">二、爱不能成为生活的障碍</div>
+							<ul>
+								<li>不要试图去超越和改变你的伴侣。</li>								
+							</ul>
+							<div onclick="show()">三、这样做，你就需要查一下到里诺的时刻表了</div>
+							<ul>
+								<li>不要指责。</li>								
+							</ul>
+							<div onclick="show()">四、一种能皆大欢喜的便捷方法</div>
+							<ul>
+								<li>给予真诚的欣赏。</li>								
+							</ul>
+							<div onclick="show()">五、对女人意义重大的</div>
+							<ul>
+								<li>从小处做起。</li>								
+							</ul>
+							<div onclick="show()">六、如果你快乐，就一要忽视这一点</div>
+							<ul>
+								<li>学会尊重。</li>								
+							</ul>
+							<div onclick="show()">七、不要做“婚姻文盲”</div>
+							<ul>
+								<li>读一本关于婚姻中性方面的好书。</li>								
+							</ul>
+									
+						</div>	
+						
+
+						
+					</div>
+					
+				</li>
+			
+			</ul>
+		</div>	
+	</section>
+	<footer>
+		<a href="index.html" >首页</a>
+	</footer>
+  <script>
+  	!(function(doc,win){      //获取网页宽度，并根据宽度设置字体大小
+		var docEle=doc.documentElement;
+		var fn=function(){
+		var width=docEle.clientWidth;      //获取宽度
+		var h3=doc.querySelector("header h3");
+		var span=doc.querySelector("header h3");
+		var header=doc.querySelector("header");
+		
+		width&&(docEle.style.fontSize=10*(width/320)+"px");
+		h3.style.fontSize=20*(width/320)+"px";
+		header.style.marginTop=header.style.marginBottom=20*(width/320)+"px";
+		span.style.fontSize=16*(width/320)+"px";
+		}
+		fn();
+		evt="resize";
+		win.addEventListener(evt,fn,false);
+		doc.addEventListener("DOMContLoaded",fn,false);
+	})(document,window)
+		
+		
+	function show(){
+		var srcEle=event.target || event.srcElement;
+		var ele=srcEle.nextElementSibling;
+		var val=ele.style.display;
+		val=="block"?ele.style.display="none":ele.style.display="block";
+	}
+
+    </script>
+</body>
